@@ -1,0 +1,2 @@
+# Place your resume PDF here as: resume.pdf
+# Update SITE.resume in js/data.js if you use a different filename.

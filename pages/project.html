@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UI/UX case study — overview, visual system, and final mockups." />
+  <meta name="theme-color" content="#121212" />
+  <title>Case Study — Glaisa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/project.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23121212'/><text x='50' y='64' text-anchor='middle' font-size='48' font-family='Arial' font-weight='700' fill='white'>A</text></svg>" />
+  <link rel="stylesheet" href="../css/enhancements.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" role="presentation"></div>
+
+  <header class="nav is-scrolled">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">Glaisa<span>.</span></a>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-resume" data-resume href="about.html#cv-profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          View CV
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero" id="caseHero">
+      <div class="container case-hero-inner">
+        <a class="case-back" href="works.html">← Back to works</a>
+        <div class="case-hero-copy">
+          <p class="section-eyebrow" id="caseCategory">UI/UX Design</p>
+          <h1 class="case-title" id="caseTitle">Project Title</h1>
+          <p class="case-lead" id="caseLead">Short description</p>
+        </div>
+      </div>
+      <div class="case-cover" id="caseCover"></div>
+      <div class="case-ui-gallery" id="caseUiGallery" aria-label="UI design photos"></div>
+    </section>
+
+    <section class="section">
+      <div class="container case-layout">
+        <div class="case-content">
+          <article id="overview" class="case-block" data-reveal>
+            <h2>Overview</h2>
+            <p id="caseOverview"></p>
+          </article>
+
+          <div class="case-visual-row" data-reveal>
+            <article id="palette" class="case-block case-block--half">
+              <h2>Color Palette</h2>
+              <div class="swatches" id="caseSwatches"></div>
+            </article>
+
+            <article id="typography" class="case-block case-block--half">
+              <h2>Typography</h2>
+              <ul class="type-list" id="caseType"></ul>
+            </article>
+          </div>
+
+          <article id="mockups" class="case-block case-block--last" data-reveal>
+            <h2>Final Mockups</h2>
+            <p>Presentation-ready mockups summarizing the final visual system and key screens.</p>
+            <div class="case-frames large" id="mockupFrames"></div>
+          </article>
+
+          <div class="case-cta" data-reveal>
+            <h2>Like this project?</h2>
+            <p>Let's talk about your next product, brand, or campaign.</p>
+            <div class="btn-group">
+              <a class="btn btn-primary" href="contact.html">Get in Touch</a>
+              <a class="btn btn-ghost" href="works.html">More Works</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="border:0;padding-top:0">
+      <p>© <span id="year"></span> Glaisa</p>
+      <a href="../index.html">Back to portfolio</a>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/project.js"></script>
+</body>
+</html>

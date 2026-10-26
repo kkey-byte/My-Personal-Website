@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glaisa — Selected works in UI/UX, graphic design, t-shirt design, and video editing." />
+  <meta name="theme-color" content="#121212" />
+  <title>Works — Glaisa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23121212'/><text x='50' y='64' text-anchor='middle' font-size='48' font-family='Arial' font-weight='700' fill='white'>A</text></svg>" />
+  <link rel="stylesheet" href="../css/enhancements.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" role="presentation"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="nav is-scrolled" id="top">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo" aria-label="Home">Glaisa<span>.</span></a>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html" class="is-active" aria-current="page">Works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary nav-resume" data-resume href="about.html#cv-profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+          View CV
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="works-side-nav" aria-label="Work categories">
+    <nav class="works-side-links" id="worksSideNav">
+      <a href="#works-social" data-works-nav="social">Social Media Designs</a>
+      <a href="#works-graphic" data-works-nav="graphic">Poster Designs</a>
+      <a href="#works-video" data-works-nav="video">Video Edits</a>
+      <a href="#works-tshirt" data-works-nav="tshirt">T-Shirt Designs</a>
+      <a href="#works-uiux" data-works-nav="uiux">UI/UX Designs</a>
+    </nav>
+  </aside>
+
+  <main id="main">
+    <section class="section works-section works-page" id="works">
+      <div class="works-main">
+        <div class="works-intro" data-reveal>
+          <div class="section-head">
+            <p class="section-eyebrow">My Works</p>
+            <h2 class="section-titleWorks">Selected projects &amp;<br>creative experiments</h2>
+            <p class="section-desc">A curated look at the work I care about most — from bold poster systems and kinetic video edits to apparel graphics and thoughtful UI/UX. Each piece is shaped with clear craft, strong visuals, and an eye for how people actually experience it.</p>
+          </div>
+        </div>
+        <div id="worksCategories"></div>
+        <div class="empty-state" id="projectsEmpty">No projects match your search. Try another term.</div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <button class="icon-btn modal-close" type="button" aria-label="Close dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-media" id="modalMedia"></div>
+      <div class="modal-body">
+        <div class="project-cat" id="modalCat"></div>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <div class="modal-actions">
+          <a class="btn btn-primary" id="modalLink" href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

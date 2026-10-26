@@ -1,0 +1,15 @@
+# Local source uploads; organized website copies are under assets/.
+/*.mp4
+/*.pdf
+/*.png
+
+# Generated and machine-local files.
+node_modules/
+tmp/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+Thumbs.db
+.DS_Store

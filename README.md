@@ -32,7 +32,9 @@ Before publishing, manually check the five pages at phone, tablet, and desktop w
 
 ## GitHub and Vercel
 
-This working folder did not contain a Git repository when inspected. Create a personal GitHub repository and commit reviewed changes in focused commits; exclude secrets, credentials, and private documents. No commits, push, or deployment have been performed.
+Repository: [kkey-byte/My-Personal-Website](https://github.com/kkey-byte/My-Personal-Website).
+
+The website source is committed on `main`; videos are tracked with Git LFS. After cloning, run `git lfs install` and `git lfs pull` to download the playable videos. Exclude secrets, credentials, and private documents from future commits. The website has not been deployed.
 
 To deploy, import that repository in Vercel, select **Other** as the framework preset, use the repository root as the project root and output directory (`.`), and leave the build and install command overrides empty. No environment variables or SPA rewrites are required. `vercel.json` preserves the existing `.html` URLs and adds basic response headers. Check Home, About, Works, Contact, and `pages/project.html?id=landing-page` after deployment.
 
